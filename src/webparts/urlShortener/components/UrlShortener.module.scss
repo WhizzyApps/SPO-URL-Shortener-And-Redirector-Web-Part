@@ -1,0 +1,71 @@
+@import '~office-ui-fabric-react/dist/sass/References.scss';
+
+.urlShortener {
+    .container {
+        margin: 0px auto;
+        //box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 25px 50px 0 rgba(0, 0, 0, 0.1);
+        .row {
+            @include ms-Grid-row;
+            //@include ms-fontColor-white;
+            //padding: 20px 0;
+            .column {
+                padding: 0 1rem;
+                max-width: 700px;
+                .title {
+                    @include ms-font-xl;
+                    margin-bottom: 0.5rem;
+                    //@include ms-fontColor-white;
+                }
+                .inputUrl {
+                    background-color: #F3F6F7;
+                    padding: 0 0.5rem 0.3rem 0.5rem;
+                    margin-bottom: 0.2rem;
+                }
+                .inputId {
+                    display:"flex";
+                    justify-content: "space-between";
+                    margin-bottom: 0.2rem;
+                    .col {
+                        width: 50%;
+                        background-color: #F3F6F7;
+                        padding: 0 0.5rem 0.2rem;
+                    }
+                }
+                .error {
+                    background-color: #fdd8db;
+                    padding: 0 0.5rem 0.2rem 0.5rem;
+                    margin-bottom: 0.2rem;
+                }
+                .output {
+                    background-color: #F3F6F7;
+                    padding: 0 0.5rem 0.2rem 0.5rem;
+                    margin-bottom: 0.2rem;
+                }
+                .lookUp {
+                    background-color: #F3F6F7;
+                    padding: 0 0.5rem 0.2rem 0.5rem;
+                    margin-bottom: 0.2rem;
+                }
+                .button {
+                    height: -webkit-fill-available;
+                    margin: 0.1875rem 0;
+                    padding: 0.4375rem 1rem;
+                    max-width: 13.125rem;
+                    min-width: 8rem;
+                }
+                .iconContainer {
+                    width: 1.25rem;
+                    height: 1.25rem;
+                    padding-left: 1rem;
+                    .successIcon {
+                        color: green;
+                        font-size: 1.25rem;
+                        font-weight: 600;
+                        cursor: default;
+                    }
+                }
+                
+            }
+        }
+    }
+}
