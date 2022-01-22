@@ -1,0 +1,18 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx-build/config.2.0.schema.json",
+  "version": "2.0",
+  "bundles": {
+    "url-shortener-web-part": {
+      "components": [
+        {
+          "entrypoint": "./lib/webparts/urlShortener/UrlShortenerWebPart.js",
+          "manifest": "./src/webparts/urlShortener/UrlShortenerWebPart.manifest.json"
+        }
+      ]
+    }
+  },
+  "externals": {},
+  "localizedResources": {
+    "UrlShortenerWebPartStrings": "lib/webparts/urlShortener/loc/{locale}.js"
+  }
+}
